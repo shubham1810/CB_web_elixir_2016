@@ -2,4 +2,6 @@
 
 Tasks in Class:
 
-1. 
+1. Create a website using attributes taught in class.
+
+2. 

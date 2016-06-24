@@ -20,7 +20,7 @@
 
         <form action="#" method="get">
             <input type="text" accesskey="h" value="access key: h" name="access"/>
-            <input type="text" autocomplete="on" value="autocomplete on" name="autocomplete"/>
+            <input type="text" autocomplete="on" value="autocomplete on" name="autocomplete" size="20"/>
             <input type="text" autofocus="true" name="autofocus" value="autofocus"/>
 
             <input type="file" name="file"/>
@@ -31,10 +31,24 @@
             <input checked type="radio" name="items" value="">item 2</input>
             <input type="radio" name="items" value="">item 3</input>
             <input type="radio" name="items" value="">item 4</input>
+            <br>
+            <input type="number" step=".5" value="31"> <!-- step specifies a pattern in which to update the values -->
+
+            <br><hr>
 
             <br>
             <input type="submit"/>
         </form>
+
+        <iframe src="parent.html" width="400" height="300">
+        </iframe>
+        <iframe src="parent.html" width="400" height="300">
+        </iframe>
+
+        <!-- video controls>
+            <source src="">
+            Video not supported in browser!
+        </video -->
 
     </body>
 </html>
