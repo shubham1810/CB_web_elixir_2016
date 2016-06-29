@@ -1,7 +1,7 @@
 
 
 .flexContainer {
-    width: 1200px;
+    width: 80%;
     height: 300px;
     margin: 20px;
     display: flex;
@@ -30,4 +30,8 @@
 
 #two {
     flex-grow: 1;
+}
+
+#flexBox {
+    display: flex;
 }
