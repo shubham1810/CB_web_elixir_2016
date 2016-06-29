@@ -1,5 +1,9 @@
 # Elixir 2016: Class 04
 
-Tasks:
 
-1.
+CSS-Types:
+1. Inline
+2. Internal
+3. External
+
+

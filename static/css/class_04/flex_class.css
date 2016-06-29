@@ -1,0 +1,33 @@
+
+
+.flexContainer {
+    width: 1200px;
+    height: 300px;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: greenyellow;
+    border: solid 3px black;
+}
+
+.flexItem {
+    width: 105px;
+    height: 100px;
+    background-color: aqua;
+    margin: 3px;
+    border: solid 2px black;
+    border-bottom-left-radius: 30px;
+}
+
+#one{
+    flex-grow: 1;
+}
+
+.flexItem:hover {
+    background-color: darkturquoise;
+}
+
+#two {
+    flex-grow: 1;
+}
