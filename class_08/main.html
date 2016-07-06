@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Try</title>
+
+    <style>
+        #back {
+            width: 100vw;
+            height: 100%;
+        }
+
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: coral;
+            border: 2px solid black;
+            margin-left: 1px;
+        }
+    </style>
+
+</head>
+<body id="main">
+
+<div id="back">
+    <div id="box"></div>
+</div>
+
+<script>
+    var pressedKey;
+
+    var margin = 1;
+
+    document.body.onkeydown = function (e) {
+        //console.log(e.keyCode);
+
+        pressedKey = "";
+
+        if (e.keyCode == 37) {
+            pressedKey = "left";
+        } else if (e.keyCode == 38) {
+            pressedKey = "up";
+        } else if (e.keyCode == 39) {
+            pressedKey = "right";
+        } else if (e.keyCode == 40) {
+            pressedKey = "down";
+        }
+
+        console.log(pressedKey);
+
+        if (pressedKey == "left") {
+            margin--;
+            document.getElementById("box").style.marginLeft = 3*margin + 'px';
+            console.log(margin);
+        } else if (pressedKey == "right") {
+            margin++;
+            document.getElementById("box").style.marginLeft = margin + 'px';
+            console.log(margin);
+        }
+    };
+</script>
+</body>
+</html>
