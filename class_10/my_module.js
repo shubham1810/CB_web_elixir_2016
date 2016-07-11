@@ -11,5 +11,5 @@ function myFunction() {
 
 module.exports = {
     myFunc: myFunction,
-    a: a,
+    a: a
 };
