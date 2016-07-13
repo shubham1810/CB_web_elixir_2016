@@ -1,11 +1,9 @@
 #!/usr/local/bin/node
+var express = require('express');
+var app = express();
 
-const mymodule = require("./my_module.js");
-var data = require("./data.json");
+app.get('/', function (req, res) {
+   res.send("API");
+});
 
-
-console.log("This is Intro to Node");
-
-mymodule.myFunc();
-
-console.log(data.name, data.work);
+app.listen(8080);
