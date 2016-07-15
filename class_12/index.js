@@ -2,7 +2,7 @@
 var express = require('express');
 var app = express();
 
-var port = 8080;
+app.set("port",  8080);
 
 app.get('/', function (req, res) {
     //console.log(req);
@@ -19,6 +19,6 @@ app.get('/', function (req, res) {
     }
 });
 
-app.listen(port, function () {
+app.listen(app.get("port"), function () {
     console.log("Launching the server on port " + port);
 });
