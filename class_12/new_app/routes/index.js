@@ -14,4 +14,16 @@ router.get('/hello', function(req, res, next) {
     }
 });
 
+router.get('/loop', function(req, res, next) {
+    var i=0;
+
+    for(i=0; i<1000000000; i++) {
+        /* if (i%1000 == 0) {
+            console.log(i);
+        } */
+    }
+
+    res.send("Done");
+});
+
 module.exports = router;
