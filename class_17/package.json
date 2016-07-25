@@ -1,0 +1,17 @@
+{
+  "name": "class_17_chat",
+  "version": "0.0.1",
+  "description": "chat application in express and using sockets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "shubham dokania",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "http": "0.0.0",
+    "socket.io": "^1.4.8"
+  }
+}
